@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--List View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ListViewController" customModule="VIPERTemplatesDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the list view" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x21-wh-dET">
+                                <rect key="frame" x="116" y="68" width="144" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pfm-yv-2Fo">
+                                <rect key="frame" x="139" y="138" width="97" height="30"/>
+                                <state key="normal" title="Add New Item"/>
+                                <connections>
+                                    <segue destination="2BA-ue-Ioj" kind="presentation" id="tSv-tT-Aud"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Pfm-yv-2Fo" firstAttribute="top" secondItem="x21-wh-dET" secondAttribute="bottom" constant="49" id="99m-Ji-67Q"/>
+                            <constraint firstItem="Pfm-yv-2Fo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bcf-AD-8Gq"/>
+                            <constraint firstItem="x21-wh-dET" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="48" id="ICM-E9-tuD"/>
+                            <constraint firstItem="x21-wh-dET" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ON7-1p-OJf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Add View Controller-->
+        <scene sceneID="9yq-1A-qE4">
+            <objects>
+                <viewController id="2BA-ue-Ioj" customClass="AddViewController" customModule="VIPERTemplatesDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Wy-bx-N85"/>
+                        <viewControllerLayoutGuide type="bottom" id="c8t-CF-6eh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Iux-Dk-UEp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the add view" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4n-Ye-dNP">
+                                <rect key="frame" x="112" y="70" width="151" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2I-lq-iUG">
+                                <rect key="frame" x="163" y="118" width="48" height="30"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <segue destination="w34-iG-d3d" kind="unwind" unwindAction="unwindFromAdd:" id="vf2-ke-h2n"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="n2I-lq-iUG" firstAttribute="top" secondItem="E4n-Ye-dNP" secondAttribute="bottom" constant="27" id="Jl8-kN-C25"/>
+                            <constraint firstItem="E4n-Ye-dNP" firstAttribute="centerX" secondItem="Iux-Dk-UEp" secondAttribute="centerX" id="Rpz-Oa-Fbd"/>
+                            <constraint firstItem="E4n-Ye-dNP" firstAttribute="top" secondItem="4Wy-bx-N85" secondAttribute="bottom" constant="50" id="U2W-a7-lkg"/>
+                            <constraint firstItem="n2I-lq-iUG" firstAttribute="centerX" secondItem="Iux-Dk-UEp" secondAttribute="centerX" id="tkL-Da-7jY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ls-ds-RSz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="w34-iG-d3d" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
