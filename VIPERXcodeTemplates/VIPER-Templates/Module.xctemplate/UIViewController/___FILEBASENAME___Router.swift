@@ -10,11 +10,11 @@ import UIKit
 
 extension ___FILEBASENAMEASIDENTIFIER___ViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        wireframe?.passDataToNextScene(segue: segue)
+        router?.passDataToNextScene(segue: segue)
     }
 }
 
-class ___FILEBASENAMEASIDENTIFIER___Wireframe {
+class ___FILEBASENAMEASIDENTIFIER___Router {
     
     weak var presentedViewController : UIViewController?
     
@@ -23,13 +23,13 @@ class ___FILEBASENAMEASIDENTIFIER___Wireframe {
     class func configure(viewController: ___FILEBASENAMEASIDENTIFIER___ViewController) {
         // Generate Module Components
         let interactor = ___FILEBASENAMEASIDENTIFIER___Interactor()
-        let wireframe = ___FILEBASENAMEASIDENTIFIER___Wireframe()
-        let presenter = ___FILEBASENAMEASIDENTIFIER___Presenter(interactor: interactor, wireframe: wireframe, userInterface: viewController)
+        let router = ___FILEBASENAMEASIDENTIFIER___Router()
+        let presenter = ___FILEBASENAMEASIDENTIFIER___Presenter(interactor: interactor, router: router, userInterface: viewController)
         
         // Wire Up
         viewController.eventHandler = presenter
-        viewController.wireframe = wireframe
-        wireframe.presentedViewController = viewController
+        viewController.router = router
+        router.presentedViewController = viewController
         interactor.output = presenter
     }
     

@@ -76,13 +76,13 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___Wireframe</string>
+			<string>___VARIABLE_sceneName:identifier___Router</string>
 			<key>Description</key>
-			<string>The wireframe name</string>
+			<string>The router name</string>
 			<key>Identifier</key>
-			<string>wireframeName</string>
+			<string>routerName</string>
 			<key>Name</key>
-			<string>Wireframe Name:</string>
+			<string>Router Name:</string>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>

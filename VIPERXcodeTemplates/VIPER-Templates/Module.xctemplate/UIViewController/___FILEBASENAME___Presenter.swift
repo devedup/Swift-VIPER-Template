@@ -17,12 +17,12 @@ class ___FILEBASENAMEASIDENTIFIER___Presenter: Presenter, ___FILEBASENAMEASIDENT
     typealias ViewInterfaceType = ___FILEBASENAMEASIDENTIFIER___ViewInterface
     
     private(set) var interactor : ___FILEBASENAMEASIDENTIFIER___InteractorInput
-    private(set) var wireframe : ___FILEBASENAMEASIDENTIFIER___Wireframe
+    private(set) var router : ___FILEBASENAMEASIDENTIFIER___Router
     weak var userInterface : ___FILEBASENAMEASIDENTIFIER___ViewInterface?
     
-    init(interactor: ___FILEBASENAMEASIDENTIFIER___Interactor, wireframe: ___FILEBASENAMEASIDENTIFIER___Wireframe, userInterface: ___FILEBASENAMEASIDENTIFIER___ViewInterface) {
+    init(interactor: ___FILEBASENAMEASIDENTIFIER___Interactor, router: ___FILEBASENAMEASIDENTIFIER___Router, userInterface: ___FILEBASENAMEASIDENTIFIER___ViewInterface) {
         self.interactor = interactor
-        self.wireframe = wireframe
+        self.router = router
         self.userInterface = userInterface
     }
     

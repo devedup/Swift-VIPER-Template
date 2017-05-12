@@ -14,16 +14,16 @@ protocol ___FILEBASENAMEASIDENTIFIER___ViewInterface: class {
 
 class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController, ViewInterface, ___FILEBASENAMEASIDENTIFIER___ViewInterface {
     
-    var wireframe: ___FILEBASENAMEASIDENTIFIER___Wireframe?
+    var router: ___FILEBASENAMEASIDENTIFIER___Router?
     var eventHandler: ___FILEBASENAMEASIDENTIFIER___ModuleInterface?
     
     // MARK: View lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ___FILEBASENAMEASIDENTIFIER___Wireframe.configure(viewController: self)
+        ___FILEBASENAMEASIDENTIFIER___Router.configure(viewController: self)
         assert(eventHandler != nil)
-        assert(wireframe != nil)
+        assert(router != nil)
         
         //eventHandler?.doSomething()
     }
