@@ -21,6 +21,7 @@
 		554BD1B81E0973C80015812C /* AddPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554BD1B41E0973C80015812C /* AddPresenter.swift */; };
 		554BD1B91E0973C80015812C /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554BD1B51E0973C80015812C /* AddViewController.swift */; };
 		554BD1BA1E0973C80015812C /* AddWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554BD1B61E0973C80015812C /* AddWireframe.swift */; };
+		55DD3A4E1EC5CEBA001CBE87 /* VIPER.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DD3A4D1EC5CEBA001CBE87 /* VIPER.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		554BD1B51E0973C80015812C /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddViewController.swift; path = Modules/Add/AddViewController.swift; sourceTree = "<group>"; };
 		554BD1B61E0973C80015812C /* AddWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddWireframe.swift; path = Modules/Add/AddWireframe.swift; sourceTree = "<group>"; };
 		55DD3A4C1EC5CE4B001CBE87 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		55DD3A4D1EC5CEBA001CBE87 /* VIPER.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VIPER.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		554BD13B1E0950CF0015812C = {
 			isa = PBXGroup;
 			children = (
+				55DD3A4D1EC5CEBA001CBE87 /* VIPER.swift */,
 				55DD3A4C1EC5CE4B001CBE87 /* README.md */,
 				554BD17A1E0968050015812C /* VIPERXcodeTemplates */,
 				554BD1461E0950CF0015812C /* VIPERTemplatesDemo */,
@@ -300,6 +303,7 @@
 				554BD14A1E0950CF0015812C /* ViewController.swift in Sources */,
 				554BD1AF1E096B250015812C /* ListPresenter.swift in Sources */,
 				554BD1B01E096B260015812C /* ListViewController.swift in Sources */,
+				55DD3A4E1EC5CEBA001CBE87 /* VIPER.swift in Sources */,
 				554BD1B81E0973C80015812C /* AddPresenter.swift in Sources */,
 				554BD1BA1E0973C80015812C /* AddWireframe.swift in Sources */,
 				554BD1481E0950CF0015812C /* AppDelegate.swift in Sources */,
