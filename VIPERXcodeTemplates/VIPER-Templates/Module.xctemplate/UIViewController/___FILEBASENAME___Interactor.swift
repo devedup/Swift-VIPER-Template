@@ -28,9 +28,3 @@ class ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER___In
     //}
     
 }
-
-/*
- 
- 
- 
- */
